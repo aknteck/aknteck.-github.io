@@ -1,0 +1,384 @@
+*
+	trasition: 0.2s
+	box-sizing: border-box
+
+html, body, main
+	width: 100%
+	height: 100%
+	margin: 0
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+	font-size: 16px
+	background: #222
+	scroll-behavior: smooth
+
+nav
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	padding: 10px
+	position: fixed
+	width: 100%
+	background: rgba(34,34,34,0.97)
+	z-index: 10
+
+	.container
+		width: 1200px
+		margin: 0 auto
+		text-align: right
+		padding: 0 5x
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	
+		.links, .logo
+
+			a
+				padding: 10px
+				margin: 5px 5px
+				color: #27999d
+				text-decoration: none
+				border-bottom: 1px solid transparent
+				transition: 0.3s
+
+				&:hover
+					border-bottom: 1px solid #cfd2ca
+					color: #cfd2ca
+
+section.hero
+	padding: 30px 0 0
+	min-height: 100vh
+	background: #222
+	display: flex
+	flex: 1
+	flex-direction: column
+	justify-content: flex-start
+	max-width: 1200px
+	margin: 0 auto 0
+
+	article
+		display: flex
+		flex-direction: column-reverse
+		justify-content: space-between
+		flex: 1
+		width: 100%
+		margin: 0 auto
+	
+		div
+			// flex: 1
+			width: 100%
+	
+	h1
+	
+	h3
+	
+	div
+		padding: 20px
+		background: url('https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e13608bf6071802b8df2c54c5205213&auto=format&fit=crop&w=1400&q=80') fixed center no-repeat
+		// background-clip: text
+		color: #27999d
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
+		&:last-of-type
+			text-align: right
+	
+	.big-text
+		margin: 0
+		font-size: 6rem
+		line-height: 6rem
+		font-weight: 600
+	
+	.small-text
+		margin: 0
+		font-size: 3rem
+		font-weight: 300
+		transition: 2s
+	
+		&:hover
+			opacity: 1
+			color: #64b2b1
+	
+section
+	background: lightgray
+	width: 100%
+	padding: 50px 20px
+
+	.orange-title
+		color: white
+		background: #f26429
+	
+	.blue-title
+		color: white
+		background: #52c1de
+	
+	.yellow-title
+		color: #222
+		background: #fdde35
+
+
+	h2
+		color: #056f7d
+		// text-align: center
+		font-size: 1.75rem
+		font-weight: 300
+		width: 100%
+		padding: 10px 20px
+	
+	img
+		max-width: 100%
+		transition: 0.3s
+	
+#projects
+	display: flex
+	flex-direction: column
+
+	.container
+		display: flex
+		flex-direction: column
+		max-width: 1200px
+		justify-content: center
+		align-items: left
+		margin: 0 auto
+	
+		a.lonely-link
+			margin: 0 auto
+			color: #eee
+			text-align: center
+			background: #222
+			width: 250px
+			padding: 15px 10px
+			text-decoration: none
+			
+			&::after
+				content: ' »'
+	
+
+	article
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		align-items: stretch
+		max-width: 1200px
+		margin: 0 auto
+		margin-bottom: 50px
+
+.project-tile
+	max-width: 280px
+	display: flex
+	flex-direction: column
+	transition: 0.3s
+	background: #222
+	margin: 5px 5px
+
+	&:hover
+		img
+			opacity: 0.5
+		
+	img
+	
+	.card-info
+		padding: 0px 20px
+		color: #eee
+	
+	
+#links
+	background: #222
+	color: #eee
+	text-align: center
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	
+
+	a
+		text-decoration: none
+		padding: 10px 20px
+		background: #222
+		color: #222
+		border-radius: 3px
+		opacity: 0.9
+		transition: 0.3s
+		margin: 5px
+		
+		&:hover
+			opacity: 1
+
+// #docs
+// 	background: url("https://raw.githubusercontent.com/ninjazim/ninjazim.github.io/master/images/codepen/docs.jpg") center no-repeat
+// 	background-size: cover
+	
+	
+@media (max-width: 1220px)
+
+	.project-tile
+		max-width: 400px
+	
+	
+@media (max-width: 860px)
+	
+	.project-tile
+		max-width: 600px
+	
+
+@media (max-width: 600px)
+	
+	.hero
+		article
+			h1
+				font-size: 4rem
+				line-height: 4rem
+		
+	#links
+		flex-direction: column
+		
+		a
+			min-width: 250px
+		
+@media (max-width: 400px)
+	
+	.hero
+		article
+			h1
+				font-size: 3rem
+				line-height: 3rem 
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Top Navigation*/
+
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: #093028;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu-top-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-top-nav > li {
+  margin: 0 1rem;
+}
+.menu-top-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+    position: relative;
+    
+    right: 20px;
+  }
+  .menu-top-nav {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu-top-nav li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu-top-nav li {
+    display: flex;
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+  }
+  .menu-top-nav > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu-top-nav > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}

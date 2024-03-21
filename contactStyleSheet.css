@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Bhai", cursive;
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),  url(images/indigoWebWizardPic15.jpg);
+  background-size: cover;
+  color: #fff;
+   
+}
+.nav {
+  height: 53px;
+  width: 105%;
+  background:#151414;  /* fallback for old browsers */
+  position: relative;
+  top:-8px;
+  right:8px 
+
+
+
+ 
+
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+a.contact_number{
+    color: white;
+    position: relative;
+    left:750px;
+    bottom:80px;
+}
+p.call{
+    position:relative;
+    left:715px;
+    bottom:37px
+    
+}
+
+.heading {
+  text-align: center;
+}
+
+form input,
+textarea {
+  display: block;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  width: 35%;
+  font-family: "Baloo Bhai", cursive;
+  
+}
+
+button {
+  padding: 10px;
+  margin: 20px auto 20px auto;
+  display: block;
+  font-family: "Baloo Bhai", cursive;
+  background-color: white;
+  cursor: pointer;
+}
+
+.fa-arrow-left{
+    color: white;
+    position: relative;
+    left: 50px;
+    top:10px;
+    
+}
+
+contactForm{
+    border: solid 3px white;
+    
+    
+    
+}
+
+@media (max-width:720px){
+    a.contact_number{
+        position:relative;
+        left:195px
+        
+    }
+    
+    
+
+}
+  
+    
